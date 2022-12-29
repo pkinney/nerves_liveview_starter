@@ -23,9 +23,9 @@ To get started, first replace the following strings throughout the project:
 # export LC_CTYPE=C 
 # export LANG=C
 
-find . -type f \( -iname "*.ex*" ! -path "./deps/*" ! -path "./_build/*" \) -print0 | xargs -0 sed -i '' -e 's/ReplaceMeApp/AppYourName/g'
-find . -type f \( -iname "*.ex*" ! -path "./deps/*" ! -path "./_build/*" \) -print0 | xargs -0 sed -i '' -e 's/replace_me_app/app_your_name/g'
-sed -i '' 's/replace_me_app/app_your_name/g' ./scripts/deploy.sh
+find . -type f \( -iname "*.ex*" ! -path "./deps/*" ! -path "./_build/*" \) -print0 | xargs -0 sed -i '' -e 's/ReplaceMeApp/YourAppName/g'
+find . -type f \( -iname "*.ex*" ! -path "./deps/*" ! -path "./_build/*" \) -print0 | xargs -0 sed -i '' -e 's/replace_me_app/your_app_name/g'
+sed -i '' 's/replace_me_app/your_app_name/g' ./scripts/deploy.sh
 ```
 
 Then rename the files and directories in lib:
