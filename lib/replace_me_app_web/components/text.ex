@@ -1,0 +1,23 @@
+defmodule ReplaceMeAppWeb.Components.Text do
+  use Phoenix.Component
+
+  def page_title(assigns) do
+    ~H"""
+    <header class="bg-white shadow">
+      <div class="mx-auto max-w-7xl py-4 px-4 sm:px-4 lg:px-8">
+        <h1 class="text-3xl font-bold tracking-tight text-gray-900"><%= @title %></h1>
+      </div>
+    </header>
+    """
+  end
+
+  def body(assigns) do
+    ~H"""
+    <main>
+      <div class="mx-auto max-w-7xl py-2 sm:px-6 lg:px-8">
+        <%= render_slot(@inner_block) %>
+      </div>
+    </main>
+    """
+  end
+end
